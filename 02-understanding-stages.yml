@@ -9,9 +9,9 @@ trigger:
 strategy:
   matrix:
     linux:
-      operatingSystem: 'ubuntu_latest'
+      operatingSystem: 'ubuntu-latest'
     mac:
-      operatingSystem: 'macos_latest' 
+      operatingSystem: 'macos-latest' 
 
 pool:
   vmImage: $(operatingSystem)

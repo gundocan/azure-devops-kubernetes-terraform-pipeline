@@ -22,6 +22,7 @@ jobs:
       echo more information
     displayName: 'Run a multi-line script'
 - job: Job2
-  -script: echo Job 2!
+  steps:
+  - script: echo Job 2!
   displayName: 'Run a one line script'
        

@@ -28,13 +28,12 @@ output "cluster_password" {
   sensitive = true
 }
 
-<<<<<<< HEAD
 
 output "host" {
   value = azurerm_kubernetes_cluster.terraform-k8s.kube_config.0.host
   sensitive = true
 }
-=======
+
 output "kube_config" {
   value = azurerm_kubernetes_cluster.terraform-k8s.kube_config_raw
   sensitive = true
@@ -42,5 +41,6 @@ output "kube_config" {
 
 output "host" {
   value = azurerm_kubernetes_cluster.terraform-k8s.kube_config.0.host
+  sensitive = true
 }
->>>>>>> ce9795510e4954e518b980db00645c40f4133cc9
+
